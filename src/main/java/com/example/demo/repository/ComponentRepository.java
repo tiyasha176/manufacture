@@ -1,5 +1,10 @@
 package com.example.demo.repository;
 
-public interface ComponentRepository {
+import org.springframework.data.repository.CrudRepository;
+
+import com.example.demo.entity.Component;
+
+
+public interface ComponentRepository extends CrudRepository<Component, Integer> {
 
 }
